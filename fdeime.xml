@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component>
+	<name>org.freedesktop.IBus.FDEIme</name>
+	<description>Input method for Linux On TNT</description>
+	<exec>/usr/bin/ibus-fdeime --ibus</exec>
+	<version>1.0</version>
+	<author>huyang</author>
+	<license>MIT</license>
+	<homepage>xx</homepage>
+	<textdomain>ibus-fdeime</textdomain>
+
+	<engines>
+		<engine>
+			<name>fdeime</name>
+			<language>zh</language>
+			<license>MIT</license>
+			<author>huyang</author>
+			<icon>/home/fde/ime/ime_app_icon.png</icon>
+			<layout>us</layout>
+			<longname>Input method for Linux On TNT</longname>
+			<description>Input method for Linux On TNT</description>
+			<rank>0</rank>
+		</engine>
+	</engines>
+</component>
