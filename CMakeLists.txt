@@ -22,5 +22,19 @@ else()
     message("glib2 not found")
 endif(GLib2_FOUND)
 
-add_executable(fde_ime fdeime_main.cpp)
-target_link_libraries(fde_ime ${IBus_LIBRARIES} ${GLib2_LIBRARIES} dl pthread)
+add_executable(ibus-lotime fdeime_main.cpp)
+target_link_libraries(ibus-lotime ${IBus_LIBRARIES} ${GLib2_LIBRARIES} dl pthread)
+install(
+  TARGETS
+	ibus-lotime
+  RUNTIME
+    DESTINATION /usr/bin
+    COMPONENT bin
+)
+
+install(
+   FILES
+	fdeime.xml
+   DESTINATION
+	/usr/share/ibus/component/
+)
